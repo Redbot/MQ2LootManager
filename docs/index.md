@@ -1,6 +1,12 @@
 ---
 tags:
   - plugin
+resource_link: "https://www.redguides.com/community/resources/mq2lootmanager.2214/"
+support_link: "https://www.redguides.com/community/threads/mq2lootmanager.78836/"
+repository: "https://github.com/jessebevil/MQ2LootManager"
+authors: "ChatWithThisName"
+tagline: "This simple loot manager will use EQ's built in Advanced Loot Window to decide how to handle loot."
+acknowledgements: "Plure"
 ---
 
 # MQ2LootManager
@@ -13,16 +19,16 @@ This simple loot manager will use EQ's built in Advanced Loot Window to decide h
 
 <a href="cmd-lootmanager/">
 {% 
-  include-markdown "plugins/community-plugins/mq2lootmanager/cmd-lootmanager.md" 
+  include-markdown "projects/mq2lootmanager/cmd-lootmanager.md" 
   start="<!--cmd-syntax-start-->" 
   end="<!--cmd-syntax-end-->" 
 %}
 </a>
-:    {% include-markdown "plugins/community-plugins/mq2lootmanager/cmd-lootmanager.md" 
+:    {% include-markdown "projects/mq2lootmanager/cmd-lootmanager.md" 
         start="<!--cmd-desc-start-->" 
         end="<!--cmd-desc-end-->" 
         trailing-newlines=false 
-     %} {{ readMore('plugins/community-plugins/mq2lootmanager/cmd-lootmanager.md') }}
+     %} {{ readMore('projects/mq2lootmanager/cmd-lootmanager.md') }}
 
 ## Settings
 
@@ -44,7 +50,7 @@ Here's how MQ2LootManager handles loot. It should be noted that anytime "do noth
 
 In all other situations, it will await for the user to make a decision or manually handle the item.
 
-This is most definitely not as feature rich as MQ2AutoLoot, but there is already an interface for handling loot in everquest. So why not use it?
+This is most definitely not as feature rich as [MQ2AutoLoot](../mq2autoloot/index.md), but there is already an interface for handling loot in everquest. So why not use it?
 Sure, it won't automatically distribute items to group members based on a predefined number of quest items set by the user.
 But it also won't automatically give yourself any No Drop items because the default action is keep. The default action is Do NOTHING
 (unless you're in a group, not the master looter, and an item has gone to your personal loot list.)
@@ -58,3 +64,7 @@ I did poke Plure's logic with a stick to get me going in the right direction. Th
 To be clear, I'm not saying there is anything wrong with MQ2Autoloot I have just always handled my loot like this with a personal macro.
 This plugin might not be for everyone. It's very simplistic but it's how I've been doing it for a while. I decided to stop using a macro to handle it and make it a plugin so I don't have to remember to start it.
 Plus, this way you can use it too if you choose.
+
+## See also
+
+- [MQ2AutoLoot](../mq2autoloot/index.md)
